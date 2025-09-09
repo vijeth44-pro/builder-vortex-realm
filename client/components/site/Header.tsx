@@ -13,6 +13,8 @@ const navItems = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const { setOpen: setSearchOpen } = useSearch();
+  const { setOpen: setCartOpen, count } = useCart();
 
   return (
     <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:bg-background/70">
