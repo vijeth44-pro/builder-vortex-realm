@@ -1,53 +1,8 @@
 import { Button } from "@/components/ui/button";
-import ProductCard, { type Product } from "@/components/site/ProductCard";
+import ProductCard from "@/components/site/ProductCard";
 import Newsletter from "@/components/site/Newsletter";
-
-const products: Product[] = [
-  {
-    id: "1",
-    name: "Premium Crew Tee",
-    price: 28,
-    image:
-      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1400&auto=format&fit=crop",
-    tag: "Bestseller",
-  },
-  {
-    id: "2",
-    name: "Everyday Chinos",
-    price: 68,
-    image:
-      "https://images.unsplash.com/photo-1520975930498-4f68b6dfa3c0?q=80&w=1400&auto=format&fit=crop",
-  },
-  {
-    id: "3",
-    name: "Structured Overshirt",
-    price: 98,
-    image:
-      "https://images.unsplash.com/photo-1551855173-98b7b9f2d3b3?q=80&w=1400&auto=format&fit=crop",
-    tag: "New",
-  },
-  {
-    id: "4",
-    name: "Merino Wool Sweater",
-    price: 120,
-    image:
-      "https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1400&auto=format&fit=crop",
-  },
-  {
-    id: "5",
-    name: "City Trench Coat",
-    price: 180,
-    image:
-      "https://images.unsplash.com/photo-1548883354-7622d97a7f3f?q=80&w=1400&auto=format&fit=crop",
-  },
-  {
-    id: "6",
-    name: "Performance Joggers",
-    price: 74,
-    image:
-      "https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=1400&auto=format&fit=crop",
-  },
-];
+import { products } from "@/data/products";
+import { useCart } from "@/store/cart";
 
 export default function Index() {
   return (
