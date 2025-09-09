@@ -52,7 +52,9 @@ export default function Header() {
             <ShoppingBag className="h-5 w-5" />
           </Button>
           <Link to="/login" className="hidden md:block">
-            <Button variant="outline" className="ml-2">Sign in</Button>
+            <Button variant="outline" className="ml-2">
+              Sign in
+            </Button>
           </Link>
         </div>
       </div>
@@ -106,7 +108,9 @@ export default function Header() {
             </nav>
             <div className="mt-8 border-t pt-6">
               <Link to="/signup" onClick={() => setOpen(false)}>
-                <Button className="w-full" size="lg">Create account</Button>
+                <Button className="w-full" size="lg">
+                  Create account
+                </Button>
               </Link>
             </div>
           </div>

@@ -12,7 +12,12 @@ export default function AuthCard({
   className?: string;
 }) {
   return (
-    <div className={cn("mx-auto w-full max-w-md rounded-2xl border bg-card p-6 shadow-sm sm:p-8", className)}>
+    <div
+      className={cn(
+        "mx-auto w-full max-w-md rounded-2xl border bg-card p-6 shadow-sm sm:p-8",
+        className,
+      )}
+    >
       <div className="text-center">
         <h1 className="text-2xl font-bold tracking-tight">{title}</h1>
         {subtitle ? (

@@ -20,7 +20,10 @@ export default function Login() {
     const email = form.email.value.trim();
     const password = form.password.value;
     if (!email || !password) {
-      toast({ title: "Missing fields", description: "Please enter your email and password." });
+      toast({
+        title: "Missing fields",
+        description: "Please enter your email and password.",
+      });
       return;
     }
     setLoading(true);
@@ -37,14 +40,23 @@ export default function Login() {
         <form className="grid gap-4" onSubmit={onSubmit}>
           <div className="grid gap-2">
             <Label htmlFor="email">Email</Label>
-            <Input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <Input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
           </div>
           <div className="grid gap-2">
             <Label htmlFor="password">Password</Label>
             <Input id="password" name="password" type="password" required />
           </div>
           <div className="flex items-center justify-between text-sm">
-            <Link to="/about" className="text-primary underline-offset-4 hover:underline">
+            <Link
+              to="/about"
+              className="text-primary underline-offset-4 hover:underline"
+            >
               Forgot password?
             </Link>
           </div>
@@ -53,7 +65,13 @@ export default function Login() {
           </Button>
         </form>
         <p className="mt-6 text-center text-sm text-muted-foreground">
-          New here? <Link to="/signup" className="text-primary underline-offset-4 hover:underline">Create an account</Link>
+          New here?{" "}
+          <Link
+            to="/signup"
+            className="text-primary underline-offset-4 hover:underline"
+          >
+            Create an account
+          </Link>
         </p>
       </AuthCard>
     </div>

@@ -24,21 +24,33 @@ export default function Signup() {
     const password = form.password.value;
     const confirm = form.confirm.value;
     if (!name || !email || !password || !confirm) {
-      toast({ title: "Missing fields", description: "Please fill out all fields." });
+      toast({
+        title: "Missing fields",
+        description: "Please fill out all fields.",
+      });
       return;
     }
     if (password.length < 6) {
-      toast({ title: "Weak password", description: "Use at least 6 characters." });
+      toast({
+        title: "Weak password",
+        description: "Use at least 6 characters.",
+      });
       return;
     }
     if (password !== confirm) {
-      toast({ title: "Passwords do not match", description: "Please re-enter your password." });
+      toast({
+        title: "Passwords do not match",
+        description: "Please re-enter your password.",
+      });
       return;
     }
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      toast({ title: "Account created", description: "Welcome to Forge & Thread." });
+      toast({
+        title: "Account created",
+        description: "Welcome to Forge & Thread.",
+      });
       navigate("/login");
     }, 900);
   };
@@ -49,11 +61,23 @@ export default function Signup() {
         <form className="grid gap-4" onSubmit={onSubmit}>
           <div className="grid gap-2">
             <Label htmlFor="name">Full name</Label>
-            <Input id="name" name="name" type="text" placeholder="Alex Parker" required />
+            <Input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Alex Parker"
+              required
+            />
           </div>
           <div className="grid gap-2">
             <Label htmlFor="email">Email</Label>
-            <Input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <Input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
           </div>
           <div className="grid gap-2">
             <Label htmlFor="password">Password</Label>
@@ -68,7 +92,13 @@ export default function Signup() {
           </Button>
         </form>
         <p className="mt-6 text-center text-sm text-muted-foreground">
-          Already have an account? <Link to="/login" className="text-primary underline-offset-4 hover:underline">Sign in</Link>
+          Already have an account?{" "}
+          <Link
+            to="/login"
+            className="text-primary underline-offset-4 hover:underline"
+          >
+            Sign in
+          </Link>
         </p>
       </AuthCard>
     </div>
