@@ -94,11 +94,20 @@ export default function Header() {
                   {item.label}
                 </NavLink>
               ))}
+              <NavLink
+                to="/login"
+                onClick={() => setOpen(false)}
+                className={({ isActive }) =>
+                  `rounded-md px-2 py-2 text-base transition-colors hover:bg-accent ${isActive ? "text-foreground" : "text-muted-foreground"}`
+                }
+              >
+                Sign in
+              </NavLink>
             </nav>
             <div className="mt-8 border-t pt-6">
-              <Button className="w-full" size="lg">
-                Browse New Arrivals
-              </Button>
+              <Link to="/signup" onClick={() => setOpen(false)}>
+                <Button className="w-full" size="lg">Create account</Button>
+              </Link>
             </div>
           </div>
         </div>
