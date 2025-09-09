@@ -107,7 +107,7 @@ export default function Index() {
               <img
                 src={c.img}
                 alt={c.title}
-                className="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-105"
+                className="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               <div className="absolute bottom-4 left-4">
@@ -130,8 +130,8 @@ export default function Index() {
           </Button>
         </div>
         <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {products.map((p) => (
-            <ProductCard key={p.id} product={p} />
+          {products.slice(0,6).map((p) => (
+            <ProductCard key={p.id} product={p} onAdd={() => add(p)} />
           ))}
         </div>
       </section>
