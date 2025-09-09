@@ -12,6 +12,10 @@ export default function ProductCard({ product, onAdd }: { product: Product; onAd
           loading="lazy"
           referrerPolicy="no-referrer"
           decoding="async"
+          onError={(e) => {
+            const t = e.currentTarget as HTMLImageElement;
+            if (t.src !== "/placeholder.svg") t.src = "/placeholder.svg";
+          }}
         />
         {product.tag ? (
           <span className="absolute left-3 top-3 rounded-full bg-black/80 px-3 py-1 text-xs font-medium text-white backdrop-blur">
