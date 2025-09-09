@@ -10,6 +10,8 @@ export default function ProductCard({ product, onAdd }: { product: Product; onAd
           alt={product.name}
           className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
           loading="lazy"
+          referrerPolicy="no-referrer"
+          decoding="async"
         />
         {product.tag ? (
           <span className="absolute left-3 top-3 rounded-full bg-black/80 px-3 py-1 text-xs font-medium text-white backdrop-blur">
