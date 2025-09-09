@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { ShoppingBag, Search, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useSearch } from "@/store/search";
+import { useCart } from "@/store/cart";
 
 const navItems = [
   { to: "/", label: "Home" },
