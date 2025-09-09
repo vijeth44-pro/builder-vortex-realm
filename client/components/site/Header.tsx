@@ -49,12 +49,20 @@ export default function Header() {
         </div>
 
         <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon" aria-label="Search">
+          <Button variant="ghost" size="icon" aria-label="Search" onClick={() => setSearchOpen(true)}>
             <Search className="h-5 w-5" />
           </Button>
-          <Button variant="ghost" size="icon" aria-label="Cart">
-            <ShoppingBag className="h-5 w-5" />
-          </Button>
+          <button aria-label="Cart" className="relative inline-flex" onClick={() => setCartOpen(true)}>
+            <span className="sr-only">Open cart</span>
+            <span className="inline-flex h-10 w-10 items-center justify-center rounded-md hover:bg-accent">
+              <ShoppingBag className="h-5 w-5" />
+            </span>
+            {count > 0 ? (
+              <span className="absolute -right-1 -top-1 inline-flex h-5 min-w-[20px] items-center justify-center rounded-full bg-primary px-1 text-[10px] font-medium text-white">
+                {count}
+              </span>
+            ) : null}
+          </button>
           <Link to="/login" className="hidden md:block">
             <Button variant="outline" className="ml-2">
               Sign in
