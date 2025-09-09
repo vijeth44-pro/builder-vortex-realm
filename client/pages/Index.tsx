@@ -17,6 +17,10 @@ export default function Index() {
             className="h-[60vh] w-full object-cover sm:h-[70vh]"
             referrerPolicy="no-referrer"
             decoding="async"
+            onError={(e) => {
+              const t = e.currentTarget as HTMLImageElement;
+              if (t.src !== "/placeholder.svg") t.src = "/placeholder.svg";
+            }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
         </div>
@@ -112,6 +116,10 @@ export default function Index() {
                 className="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105"
                 referrerPolicy="no-referrer"
                 decoding="async"
+                onError={(e) => {
+                  const t = e.currentTarget as HTMLImageElement;
+                  if (t.src !== "/placeholder.svg") t.src = "/placeholder.svg";
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               <div className="absolute bottom-4 left-4">
