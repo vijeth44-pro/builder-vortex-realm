@@ -1,3 +1,4 @@
+import React from "react";
 import { CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
 import { useSearch } from "@/store/search";
 import { products } from "@/data/products";
