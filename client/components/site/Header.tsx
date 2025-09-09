@@ -51,6 +51,9 @@ export default function Header() {
           <Button variant="ghost" size="icon" aria-label="Cart">
             <ShoppingBag className="h-5 w-5" />
           </Button>
+          <Link to="/login" className="hidden md:block">
+            <Button variant="outline" className="ml-2">Sign in</Button>
+          </Link>
         </div>
       </div>
 
