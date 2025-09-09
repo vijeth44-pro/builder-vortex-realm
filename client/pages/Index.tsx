@@ -15,6 +15,8 @@ export default function Index() {
             src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?q=80&auto=format&fit=crop&w=2000"
             alt="Menswear hero"
             className="h-[60vh] w-full object-cover sm:h-[70vh]"
+            referrerPolicy="no-referrer"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
         </div>
@@ -108,6 +110,8 @@ export default function Index() {
                 src={c.img}
                 alt={c.title}
                 className="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105"
+                referrerPolicy="no-referrer"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               <div className="absolute bottom-4 left-4">
