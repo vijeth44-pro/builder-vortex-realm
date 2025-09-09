@@ -5,6 +5,7 @@ import { products } from "@/data/products";
 import { useCart } from "@/store/cart";
 
 export default function Index() {
+  const { add } = useCart();
   return (
     <div>
       {/* Hero */}
