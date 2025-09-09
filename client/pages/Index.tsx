@@ -95,15 +95,15 @@ export default function Index() {
           {[
             {
               title: "Outerwear",
-              img: "https://images.unsplash.com/photo-1520975661595-6453be3f7070?q=80&w=1400&auto=format&fit=crop",
+              img: "https://images.pexels.com/photos/1038048/pexels-photo-1038048.jpeg?auto=compress&cs=tinysrgb&w=1600",
             },
             {
               title: "Tops",
-              img: "https://images.unsplash.com/photo-1516826957135-700dedea698c?q=80&w=1400&auto=format&fit=crop",
+              img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&w=1600",
             },
             {
               title: "Bottoms",
-              img: "https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?q=80&w=1400&auto=format&fit=crop",
+              img: "https://images.pexels.com/photos/1040423/pexels-photo-1040423.jpeg?auto=compress&cs=tinysrgb&w=1600",
             },
           ].map((c) => (
             <div
