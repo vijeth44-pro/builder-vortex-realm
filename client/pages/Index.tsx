@@ -54,7 +54,7 @@ export default function Index() {
     <div>
       {/* Hero */}
       <section className="relative">
-        <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?q=80&w=2000&auto=format&fit=crop"
             alt="Menswear hero"
@@ -62,7 +62,7 @@ export default function Index() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
         </div>
-        <div className="container mx-auto flex h-[60vh] items-end px-4 pb-12 sm:h-[70vh]">
+        <div className="container relative z-10 mx-auto flex h-[60vh] items-end px-4 pb-12 sm:h-[70vh]">
           <div className="max-w-xl text-white">
             <p className="text-xs uppercase tracking-widest text-white/70">Forge & Thread</p>
             <h1 className="mt-2 text-4xl font-extrabold tracking-tight sm:text-5xl">Elevate the Everyday</h1>
