@@ -16,10 +16,17 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:bg-background/70">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <div className="flex items-center gap-6">
-          <button className="md:hidden" aria-label="Open menu" onClick={() => setOpen(true)}>
+          <button
+            className="md:hidden"
+            aria-label="Open menu"
+            onClick={() => setOpen(true)}
+          >
             <Menu className="h-6 w-6" />
           </button>
-          <Link to="/" className="font-extrabold tracking-tight text-xl sm:text-2xl">
+          <Link
+            to="/"
+            className="font-extrabold tracking-tight text-xl sm:text-2xl"
+          >
             Forge<span className="text-primary">&</span>Thread
           </Link>
           <nav className="hidden md:flex items-center gap-6 text-sm">
@@ -49,11 +56,22 @@ export default function Header() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="fixed inset-0 z-50 md:hidden" role="dialog" aria-modal="true">
-          <div className="absolute inset-0 bg-black/40" onClick={() => setOpen(false)} />
+        <div
+          className="fixed inset-0 z-50 md:hidden"
+          role="dialog"
+          aria-modal="true"
+        >
+          <div
+            className="absolute inset-0 bg-black/40"
+            onClick={() => setOpen(false)}
+          />
           <div className="ml-0 mt-0 h-full w-80 max-w-[85%] bg-background p-6 shadow-xl">
             <div className="flex items-center justify-between">
-              <Link to="/" className="font-extrabold tracking-tight text-xl" onClick={() => setOpen(false)}>
+              <Link
+                to="/"
+                className="font-extrabold tracking-tight text-xl"
+                onClick={() => setOpen(false)}
+              >
                 Forge<span className="text-primary">&</span>Thread
               </Link>
               <button aria-label="Close menu" onClick={() => setOpen(false)}>

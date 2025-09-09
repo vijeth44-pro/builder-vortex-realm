@@ -6,7 +6,8 @@ export default function SiteLayout() {
   return (
     <div className="min-h-dvh flex flex-col bg-background text-foreground">
       <Header />
-      <main className="flex-1">{/* Page content */}
+      <main className="flex-1">
+        {/* Page content */}
         <Outlet />
       </main>
       <Footer />
