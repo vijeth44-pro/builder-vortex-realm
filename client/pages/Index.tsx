@@ -116,9 +116,9 @@ export default function Index() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               <div className="absolute bottom-4 left-4">
                 <h3 className="text-lg font-semibold text-white">{c.title}</h3>
-                <Button size="sm" variant="secondary" className="mt-2">
-                  Shop now
-                </Button>
+                <a href="/shop" className="inline-block">
+                  <Button size="sm" variant="secondary" className="mt-2">Shop now</Button>
+                </a>
               </div>
             </div>
           ))}
