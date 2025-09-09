@@ -12,6 +12,8 @@ import SiteLayout from "./components/site/SiteLayout";
 import Placeholder from "./pages/Placeholder";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Shop from "./pages/Shop";
+import About from "./pages/About";
 
 const queryClient = new QueryClient();
 
@@ -24,8 +26,8 @@ const App = () => (
         <Routes>
           <Route element={<SiteLayout />}>
             <Route index element={<Index />} />
-            <Route path="shop" element={<Placeholder title="Shop" />} />
-            <Route path="about" element={<Placeholder title="About" />} />
+            <Route path="shop" element={<Shop />} />
+            <Route path="about" element={<About />} />
             <Route path="login" element={<Login />} />
             <Route path="signup" element={<Signup />} />
           </Route>
