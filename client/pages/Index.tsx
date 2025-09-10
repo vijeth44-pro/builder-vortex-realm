@@ -27,7 +27,7 @@ export default function Index() {
         <div className="container relative z-10 mx-auto flex h-[60vh] items-end px-4 pb-12 sm:h-[70vh]">
           <div className="max-w-xl text-white">
             <p className="text-xs uppercase tracking-widest text-white/70">
-              Forge & Thread
+              Urban Couture
             </p>
             <h1 className="mt-2 text-4xl font-extrabold tracking-tight sm:text-5xl">
               Elevate the Everyday
