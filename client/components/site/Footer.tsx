@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <Link to="/" className="font-extrabold tracking-tight text-xl">
-              Forge<span className="text-primary">&</span>Thread
+              Urban Couture
             </Link>
             <p className="mt-3 text-sm text-muted-foreground max-w-sm">
               Contemporary menswear crafted for movement. Premium fabrics, clean
@@ -93,7 +93,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t pt-6 text-xs text-muted-foreground md:flex-row">
           <p>
-            © {new Date().getFullYear()} Forge & Thread. All rights reserved.
+            © {new Date().getFullYear()} Urban Couture. All rights reserved.
           </p>
           <div className="flex gap-4">
             <Link to="/about" className="hover:text-foreground">
