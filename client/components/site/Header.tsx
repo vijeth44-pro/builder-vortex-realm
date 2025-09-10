@@ -31,7 +31,7 @@ export default function Header() {
             to="/"
             className="font-extrabold tracking-tight text-xl sm:text-2xl"
           >
-            Forge<span className="text-primary">&</span>Thread
+            Urban Couture
           </Link>
           <nav className="hidden md:flex items-center gap-6 text-sm">
             {navItems.map((item) => (
