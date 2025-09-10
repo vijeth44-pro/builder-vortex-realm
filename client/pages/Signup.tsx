@@ -49,7 +49,7 @@ export default function Signup() {
       setLoading(false);
       toast({
         title: "Account created",
-        description: "Welcome to Forge & Thread.",
+        description: "Welcome to Urban Couture.",
       });
       navigate("/login");
     }, 900);
