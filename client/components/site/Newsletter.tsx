@@ -8,7 +8,7 @@ export default function Newsletter() {
       <div className="absolute -right-10 -bottom-10 h-40 w-40 rounded-full bg-primary/10 blur-3xl" />
       <div className="relative mx-auto max-w-2xl text-center">
         <h3 className="text-2xl font-bold tracking-tight">
-          Join the Forge & Thread list
+          Join the Urban Couture list
         </h3>
         <p className="mt-2 text-sm text-muted-foreground">
           Style tips, early access, and members-only drops. No spam.
