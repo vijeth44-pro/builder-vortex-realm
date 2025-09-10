@@ -89,7 +89,7 @@ export default function Header() {
                 className="font-extrabold tracking-tight text-xl"
                 onClick={() => setOpen(false)}
               >
-                Forge<span className="text-primary">&</span>Thread
+                Urban Couture
               </Link>
               <button aria-label="Close menu" onClick={() => setOpen(false)}>
                 <X className="h-6 w-6" />
