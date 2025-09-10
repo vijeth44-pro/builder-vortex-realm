@@ -29,7 +29,10 @@ export default function Login() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      toast({ title: "Signed in", description: "Welcome back to Urban Couture." });
+      toast({
+        title: "Signed in",
+        description: "Welcome back to Urban Couture.",
+      });
       navigate("/");
     }, 800);
   };

@@ -1,4 +1,9 @@
-import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+} from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/store/cart";
 
@@ -16,13 +21,24 @@ export default function CartSheet() {
           ) : (
             items.map((i) => (
               <div key={i.product.id} className="flex gap-3">
-                <img src={i.product.image} alt={i.product.name} className="h-16 w-16 rounded-md object-cover" />
+                <img
+                  src={i.product.image}
+                  alt={i.product.name}
+                  className="h-16 w-16 rounded-md object-cover"
+                />
                 <div className="flex-1">
                   <p className="text-sm font-medium">{i.product.name}</p>
                   <p className="text-xs text-muted-foreground">Qty {i.qty}</p>
                 </div>
-                <div className="text-sm">${(i.product.price * i.qty).toFixed(2)}</div>
-                <button className="text-xs text-muted-foreground underline" onClick={() => remove(i.product.id)}>Remove</button>
+                <div className="text-sm">
+                  ${(i.product.price * i.qty).toFixed(2)}
+                </div>
+                <button
+                  className="text-xs text-muted-foreground underline"
+                  onClick={() => remove(i.product.id)}
+                >
+                  Remove
+                </button>
               </div>
             ))
           )}
@@ -34,7 +50,9 @@ export default function CartSheet() {
           </div>
           <div className="mt-4 flex gap-2">
             <Button className="flex-1">Checkout</Button>
-            <Button variant="outline" onClick={clear}>Clear</Button>
+            <Button variant="outline" onClick={clear}>
+              Clear
+            </Button>
           </div>
         </div>
       </SheetContent>

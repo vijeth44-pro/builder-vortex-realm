@@ -43,7 +43,8 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     });
     setOpen(true);
   };
-  const remove = (id: string) => setItems((prev) => prev.filter((i) => i.product.id !== id));
+  const remove = (id: string) =>
+    setItems((prev) => prev.filter((i) => i.product.id !== id));
   const clear = () => setItems([]);
 
   const { total, count } = useMemo(() => {
@@ -52,7 +53,16 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     return { total, count };
   }, [items]);
 
-  const value: CartContextValue = { items, add, remove, clear, total, count, open, setOpen };
+  const value: CartContextValue = {
+    items,
+    add,
+    remove,
+    clear,
+    total,
+    count,
+    open,
+    setOpen,
+  };
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 }
 

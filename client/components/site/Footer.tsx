@@ -12,8 +12,8 @@ export default function Footer() {
               Urban Couture
             </Link>
             <p className="mt-3 text-sm text-muted-foreground max-w-sm">
-              Urban Couture menswear crafted for movement. Premium fabrics, clean
-              lines, and timeless design.
+              Urban Couture menswear crafted for movement. Premium fabrics,
+              clean lines, and timeless design.
             </p>
           </div>
 

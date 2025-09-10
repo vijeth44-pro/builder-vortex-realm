@@ -5,7 +5,11 @@ const SearchContext = createContext<SearchContextValue | undefined>(undefined);
 
 export function SearchProvider({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false);
-  return <SearchContext.Provider value={{ open, setOpen }}>{children}</SearchContext.Provider>;
+  return (
+    <SearchContext.Provider value={{ open, setOpen }}>
+      {children}
+    </SearchContext.Provider>
+  );
 }
 
 export function useSearch() {

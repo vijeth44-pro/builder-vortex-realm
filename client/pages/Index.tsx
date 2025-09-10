@@ -125,7 +125,9 @@ export default function Index() {
               <div className="absolute bottom-4 left-4">
                 <h3 className="text-lg font-semibold text-white">{c.title}</h3>
                 <a href="/shop" className="inline-block">
-                  <Button size="sm" variant="secondary" className="mt-2">Shop now</Button>
+                  <Button size="sm" variant="secondary" className="mt-2">
+                    Shop now
+                  </Button>
                 </a>
               </div>
             </div>
@@ -142,7 +144,7 @@ export default function Index() {
           </Button>
         </div>
         <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {products.slice(0,6).map((p) => (
+          {products.slice(0, 6).map((p) => (
             <ProductCard key={p.id} product={p} onAdd={() => add(p)} />
           ))}
         </div>

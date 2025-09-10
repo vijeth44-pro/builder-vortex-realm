@@ -1,7 +1,13 @@
 import { Button } from "@/components/ui/button";
 import type { Product } from "@/types/product";
 
-export default function ProductCard({ product, onAdd }: { product: Product; onAdd?: (p: Product) => void }) {
+export default function ProductCard({
+  product,
+  onAdd,
+}: {
+  product: Product;
+  onAdd?: (p: Product) => void;
+}) {
   return (
     <div className="group rounded-xl border bg-card text-card-foreground shadow-sm transition hover:shadow-md">
       <div className="relative aspect-[4/5] overflow-hidden rounded-t-xl bg-muted">
@@ -33,7 +39,11 @@ export default function ProductCard({ product, onAdd }: { product: Product; onAd
               ${product.price.toFixed(2)}
             </p>
           </div>
-          <Button size="sm" className="rounded-full" onClick={() => onAdd?.(product)}>
+          <Button
+            size="sm"
+            className="rounded-full"
+            onClick={() => onAdd?.(product)}
+          >
             Add
           </Button>
         </div>

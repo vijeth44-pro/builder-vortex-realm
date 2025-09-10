@@ -7,7 +7,8 @@ import { useCart } from "@/store/cart";
 export default function Shop() {
   const [active, setActive] = useState<(typeof categories)[number]>("All");
   const { add } = useCart();
-  const filtered = active === "All" ? products : products.filter((p) => p.category === active);
+  const filtered =
+    active === "All" ? products : products.filter((p) => p.category === active);
 
   return (
     <div className="container mx-auto px-4 py-10">
@@ -15,7 +16,11 @@ export default function Shop() {
         <h1 className="text-2xl font-bold tracking-tight">Shop</h1>
         <div className="flex flex-wrap gap-2">
           {categories.map((c) => (
-            <Button key={c} variant={active === c ? "default" : "outline"} onClick={() => setActive(c)}>
+            <Button
+              key={c}
+              variant={active === c ? "default" : "outline"}
+              onClick={() => setActive(c)}
+            >
               {c}
             </Button>
           ))}

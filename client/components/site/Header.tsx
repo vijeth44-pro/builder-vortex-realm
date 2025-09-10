@@ -49,10 +49,19 @@ export default function Header() {
         </div>
 
         <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon" aria-label="Search" onClick={() => setSearchOpen(true)}>
+          <Button
+            variant="ghost"
+            size="icon"
+            aria-label="Search"
+            onClick={() => setSearchOpen(true)}
+          >
             <Search className="h-5 w-5" />
           </Button>
-          <button aria-label="Cart" className="relative inline-flex" onClick={() => setCartOpen(true)}>
+          <button
+            aria-label="Cart"
+            className="relative inline-flex"
+            onClick={() => setCartOpen(true)}
+          >
             <span className="sr-only">Open cart</span>
             <span className="inline-flex h-10 w-10 items-center justify-center rounded-md hover:bg-accent">
               <ShoppingBag className="h-5 w-5" />
