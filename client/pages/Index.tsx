@@ -95,7 +95,7 @@ export default function Index() {
           {[
             {
               title: "Outerwear",
-              img: "https://images.pexels.com/photos/1038048/pexels-photo-1038048.jpeg?auto=compress&cs=tinysrgb&w=1600",
+              img: "https://images.pexels.com/photos/2983465/pexels-photo-2983465.jpeg?auto=compress&cs=tinysrgb&w=1600",
             },
             {
               title: "Tops",
