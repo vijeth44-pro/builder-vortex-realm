@@ -12,7 +12,7 @@ export default function Index() {
       <section className="relative">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?q=80&auto=format&fit=crop&w=2000"
+            src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=2000"
             alt="Menswear hero"
             className="h-[60vh] w-full object-cover sm:h-[70vh]"
             referrerPolicy="no-referrer"
